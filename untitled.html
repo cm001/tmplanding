@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Portal</title>
+<link rel="icon" type="image/x-icon" href="https://cybermerc.com/favicon.ico">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif; /* Change font to sans-serif */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide overflow to prevent scrolling */
+        background-image: url('https://www.cybermerc.com/_nuxt/footer-bg.zYj-4kOy.jpg');
+        background-size: cover; /* Added to make the background image cover the entire viewport */
+        color: black; /* Changed text color to black */
+    }
+    .login-container {
+        background: black; /* Changed background color to black */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+    .login-container h2 {
+        margin-bottom: 20px;
+        color: #007bff; /* Changed text color to dark blue */
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: black; /* Changed text color to black */
+    }
+    .login-container input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .logo {
+        margin-bottom: 20px;
+        max-width: 100%; /* Added to limit the maximum width of the logo */
+        max-height: 100px; /* Added to limit the maximum height of the logo */
+    }
+    .login-container p {
+        margin-bottom: 20px;
+        color: white; /* Changed text color to white */
+    }
+    .login-warning {
+        margin-top: 20px;
+        font-style: italic;
+        color: red; /* Changed text color to red for warning */
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <img class="logo" src="https://www.cybermerc.com/_nuxt/CyberMerc-Logo-website.NceWMXsB.png" alt="Cybermerc Logo"> <!-- Updated logo URL -->
+        <h2>Login to Portal Resources</h2> <!-- Changed heading text -->
+        <p>Welcome to the Cybermerc portal. To access these resources, please provide your Single Sign On (SSO) and multi-factor authentication credentials (MFA) when prompted.</p>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        <p class="login-warning">Warning: Only authorized users should login. All access attempts are monitored.</p>
+    </div>
+    <footer>
+        <a href="https://www.cybermerc.com" target="_blank">Cybermerc.com</a>
+        <!-- You can add more links here if needed -->
+    </footer>
+</body>
+</html>
